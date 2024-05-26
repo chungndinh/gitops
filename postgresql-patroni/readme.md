@@ -123,6 +123,9 @@ https://serverstadium.com/knowledge-base/set-up-high-availability-postgresql-clu
     sudo systemctl enable haproxy
     sudo systemctl start haproxy
     ```
+# Kết nối
+- Kết nối tới 192.168.2.244:5000 với user posgre và password trong patroni
+- Sử dụng trang stats của haproxy để theo dõi node nào đang làm lead và replica
 # Patroni
 - Chuyển lead:
     - Chuyển lead từ node này sang node khác:
