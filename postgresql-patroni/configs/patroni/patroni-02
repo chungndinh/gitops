@@ -51,7 +51,11 @@ postgresql:
             password: secretlogin321
     parameters:
         unix_socket_directories: '.'
-
+        # Tunning
+        shared_buffers: 2GB             # Chiếm 20-25% Memory
+        work_mem: 64MB                  # Memory cho các tác vụ khác
+        maintenance_work_mem: 512MB     # Memory cho các tác vụ bảo trì
+        effective_cache_size: 3GB       # Memory cache 75% Memory        
 tags:
     nofailover: false
     noloadbalance: false
