@@ -130,7 +130,7 @@ https://serverstadium.com/knowledge-base/set-up-high-availability-postgresql-clu
 - Chuyển lead:
     - Chuyển lead từ node này sang node khác:
         ```
-        patronictl -c /etc/patroni/patronictl.yaml switchover --master <current-leader> --candidate <new-leader>
+        patronictl -c /etc/patroni.yml switchover --master <current-leader> --candidate <new-leader>
         ```
     - Chuyển lead force:
         ```
