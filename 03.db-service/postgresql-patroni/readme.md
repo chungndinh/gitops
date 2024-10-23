@@ -136,5 +136,12 @@ https://serverstadium.com/knowledge-base/set-up-high-availability-postgresql-clu
         ```
         patronictl -c /etc/patroni.yml failover --candidate <new-leader>
         ```
-
+## Update mới:
+# Mô hình:
+- 3 Node (ETCD + Patroni) + 1 Haproxy (Read | Read/Write)
+- pgBackRest (backup tool used to perform PostgreSQL database backup, archiving, restoration, and point-in-time recovery)
+- Link tham khảo: https://docs.percona.com/postgresql/14/solutions/high-availability.html#key-benefits-of-patroni
+# Cấu hình:
+- Link tham khảo: https://docs.percona.com/postgresql/14/solutions/ha-setup-apt.html
+- Cài etcd: https://docs.percona.com/postgresql/14/how-to.html
 
